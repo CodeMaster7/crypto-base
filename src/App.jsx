@@ -35,6 +35,7 @@ function App() {
 					<Route path=':coinId' />
 				</Route>
 			</Routes>
+			<Footer />
 		</ThemeProvider>
 	)
 }
