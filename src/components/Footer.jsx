@@ -59,6 +59,7 @@ function Footer() {
 								<FaTwitter />
 								<FaFacebookF />
 								<FaGithub />
+                                <FaGit />
 							</div>
 						</div>
 					</div>
