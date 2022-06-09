@@ -1,11 +1,11 @@
-import CoinSearch from '../components/CoinSearch'
+import CoinSection from '../components/CoinSection'
 import Tranding from '../components/Tranding'
 
 function Home({ coins }) {
 	return (
 		<div>
-			<CoinSearch coins={coins} />
-            <Tranding />
+			<CoinSection coins={coins} />
+			<Tranding />
 		</div>
 	)
 }

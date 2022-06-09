@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Coin from './Coin'
 
-function CoinSearch({ coins }) {
+function CoinSection({ coins }) {
 	const [searchText, setSearchText] = useState('')
 
 	const handleSearch = (e) => {
@@ -58,4 +58,4 @@ function CoinSearch({ coins }) {
 		</div>
 	)
 }
-export default CoinSearch
+export default CoinSection
