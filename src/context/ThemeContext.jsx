@@ -4,7 +4,6 @@ import { useState, useEffect, createContext } from 'react'
 const getInitialTheme = () => {
 	if (typeof window !== 'undefined' && window.localStorage) {
 		const storedPrefs = window.localStorage.getItem('color-theme')
-        console.log("🚀 ~ storedPrefs", storedPrefs)
 		if (typeof storedPrefs === 'string') {
 			return storedPrefs
 		}
@@ -21,13 +20,10 @@ const getInitialTheme = () => {
 export const ThemeContext = createContext()
 
 export const ThemeProvider = ({ initialTheme, children }) => {
-    console.log('🚀 ~ initialTheme', { initialTheme, children })
 	const [theme, setTheme] = useState(getInitialTheme)
 
 	const rawSetTheme = (theme) => {
-        console.log("🚀 ~ theme", theme)
 		const root = window.document.documentElement
-        console.log("🚀 ~ root", root)
 		const isDark = theme === 'dark'
 
 		root.classList.remove(isDark ? 'light' : 'dark')
@@ -37,7 +33,6 @@ export const ThemeProvider = ({ initialTheme, children }) => {
 	}
 
 	if (initialTheme) {
-        console.log("🚀 ~ initialTheme2", initialTheme)
 		rawSetTheme(initialTheme)
 	}
 

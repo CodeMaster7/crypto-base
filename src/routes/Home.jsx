@@ -1,6 +1,10 @@
-function Home() {
-  return (
-    <div>Home</div>
-  )
+import CoinSearch from '../components/CoinSearch'
+
+function Home({ coins }) {
+	return (
+		<div>
+			<CoinSearch coins={coins} />
+		</div>
+	)
 }
 export default Home

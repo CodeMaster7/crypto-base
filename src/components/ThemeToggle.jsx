@@ -4,7 +4,6 @@ import { ThemeContext } from '../context/ThemeContext'
 
 function ThemeToggle() {
 	const { theme, setTheme } = useContext(ThemeContext)
-    console.log("🚀 ~ { theme, setTheme }", { theme, setTheme })
 
 	const themeColor = () => {
         setTheme(theme === 'dark' ? 'light' : 'dark')
