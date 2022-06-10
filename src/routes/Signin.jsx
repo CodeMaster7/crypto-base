@@ -4,15 +4,29 @@ import { Link, useNavigate } from 'react-router-dom'
 import { UserAuth } from '../context/AuthContext'
 
 function Signin() {
-    const [email, setEmail] = useState('')
+	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 	const [error, setError] = useState('')
 	const navigate = useNavigate()
 	const { signIn } = UserAuth()
 
-    const handleSubmit = async (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault()
 		setError('')
+		try {
+			await signIn(email, password)
+			navigate('/homepage')
+		} catch (e) {
+			setError(e.message)
+			console.log(e.message)
+		}
+	}
+
+    const handleDemo = async (e) => {
+		e.preventDefault()
+		setError('')
+        const email = 'testUser@test.com'
+        const password = 'secret'
 		try {
 			await signIn(email, password)
 			navigate('/homepage')
@@ -53,9 +67,14 @@ function Signin() {
 					<button className='w-full my-2 p-3 bg-button text-btnText rounded-2xl shadow-xl'>
 						Sign in
 					</button>
+					<button
+						className='w-full my-2 p-3 bg-button text-btnText rounded-2xl shadow-xl'
+						onClick={handleDemo}>
+						Demo
+					</button>
 				</form>
 				<p className='my-4'>
-					Don't have an account?{' '}
+					Don't have an account?
 					<Link to='/signup' className='text-accent'>
 						Sign up
 					</Link>
