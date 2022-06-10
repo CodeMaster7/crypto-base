@@ -15,7 +15,7 @@ function Signin() {
 		setError('')
 		try {
 			await signIn(email, password)
-			navigate('/account')
+			navigate('/homepage')
 		} catch (e) {
 			setError(e.message)
 			console.log(e.message)

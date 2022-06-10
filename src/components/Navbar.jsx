@@ -8,6 +8,8 @@ function Navbar() {
 	const [nav, setNav] = useState(false)
     const { user, logout } = UserAuth()
 	const navigate = useNavigate()
+    console.log("🚀 ~ navigate", navigate)
+
 
 	const handleNav = () => {
 		setNav(!nav)
@@ -24,7 +26,7 @@ function Navbar() {
 
 	return (
 		<div className='rounded-div flex items-center justify-between h-20 font-bold'>
-			<Link to='/'>
+			<Link to='/homepage'>
 				<h1 className='text-2xl'>Cryptobase</h1>
 			</Link>
 			<div className='hidden md:block'>
@@ -83,7 +85,7 @@ function Navbar() {
 				{user?.email ? (
 					<ul className='w-full p-4'>
 						<li onClick={handleNav} className='border-b py-6'>
-							<Link to='/'>Home</Link>
+							<Link to='/homepage'>Home</Link>
 						</li>
 						<li onClick={handleNav} className='border-b py-6'>
 							<Link to='/account'>Account</Link>

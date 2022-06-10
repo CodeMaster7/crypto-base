@@ -3,13 +3,14 @@ import { Route, Routes } from 'react-router-dom'
 import axios from 'axios'
 import { ThemeProvider } from './context/ThemeContext'
 import { AuthContextProvider } from './context/AuthContext'
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
 import Home from './routes/Home'
-import Footer from './components/Footer'
+// import Footer from './components/Footer'
 import Signin from './routes/Signin'
 import Signup from './routes/Signup'
 import Account from './routes/Account'
 import CoinPage from './routes/CoinPage'
+import HomePage from './routes/HomePage'
 
 function App() {
 	const [coins, setCoins] = useState([])
@@ -27,9 +28,10 @@ function App() {
 	return (
 		<ThemeProvider>
 			<AuthContextProvider>
-				<Navbar />
+				{/* <Navbar /> */}
 				<Routes>
-					<Route path='/' element={<Home coins={coins} />} />
+					<Route path='/' element={<Home />} />
+					<Route path='/homepage' element={<HomePage coins={coins} />} />
 					<Route path='/signin' element={<Signin />} />
 					<Route path='/signup' element={<Signup />} />
 					<Route path='/account' element={<Account />} />
@@ -37,7 +39,7 @@ function App() {
 						<Route path=':coinId' />
 					</Route>
 				</Routes>
-				<Footer />
+				{/* <Footer /> */}
 			</AuthContextProvider>
 		</ThemeProvider>
 	)
