@@ -8,7 +8,6 @@ function Navbar() {
 	const [nav, setNav] = useState(false)
     const { user, logout } = UserAuth()
 	const navigate = useNavigate()
-    console.log("🚀 ~ navigate", navigate)
 
 
 	const handleNav = () => {

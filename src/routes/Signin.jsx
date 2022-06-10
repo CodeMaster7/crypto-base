@@ -25,7 +25,7 @@ function Signin() {
     const handleDemo = async (e) => {
 		e.preventDefault()
 		setError('')
-        const email = 'testUser@test.com'
+        const email = 'testuser@test.com'
         const password = 'secret'
 		try {
 			await signIn(email, password)
