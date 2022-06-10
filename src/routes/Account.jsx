@@ -4,7 +4,6 @@ import SavedCoin from '../components/SavedCoin'
 
 function Account() {
     const { user, logout } = UserAuth()
-    console.log("🚀 ~ user", user)
 	const navigate = useNavigate()
 
 	const handleSignOut = async () => {

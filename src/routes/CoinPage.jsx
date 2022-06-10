@@ -8,7 +8,6 @@ import axios from 'axios'
 function CoinPage() {
 	const [coin, setCoin] = useState({})
 	const params = useParams()
-    console.log("🚀 ~ params", params)
 
 	const url =
 		`https://api.coingecko.com/api/v3/coins/${params.coinId}?localization=false&sparkline=true`
@@ -16,7 +15,6 @@ function CoinPage() {
 	useEffect(() => {
 		axios.get(url).then((response) => {
 			setCoin(response.data)
-			console.log(response.data)
 		})
 	}, [url])
 
