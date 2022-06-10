@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import FeaturesImage from '../assets/images/Features-image.JPG';
 
 function Features() {
 	return (
@@ -9,12 +10,12 @@ function Features() {
 						<img
 							alt='feature'
 							className='object-cover object-center h-full w-full'
-							src='https://dummyimage.com/600x600/edf2f7/a5afbd'
+							src={FeaturesImage}
 						/>
 					</div>
 					<div className='flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center'>
 						<div className='flex flex-col mb-10 lg:items-start items-center'>
-							<div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5'>
+							<div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-blue-500 mb-5'>
 								<svg
 									fill='none'
 									stroke='currentColor'
@@ -28,7 +29,7 @@ function Features() {
 							</div>
 							<div className='flex-grow'>
 								<h2 className='text-gray-900 text-lg title-font font-medium mb-3'>
-									Shooting Stars
+									Coinbase NFT
 								</h2>
 								<p className='leading-relaxed text-base'>
 									Blue bottle crucifix vinyl post-ironic four
@@ -37,7 +38,7 @@ function Features() {
 								</p>
 								<Link
 									to='/'
-									className='mt-3 text-indigo-500 inline-flex items-center'>
+									className='mt-3 text-blue-500 inline-flex items-center'>
 									Learn More
 									<svg
 										fill='none'
@@ -53,7 +54,7 @@ function Features() {
 							</div>
 						</div>
 						<div className='flex flex-col mb-10 lg:items-start items-center'>
-							<div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5'>
+							<div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-blue-500 mb-5'>
 								<svg
 									fill='none'
 									stroke='currentColor'
@@ -69,7 +70,7 @@ function Features() {
 							</div>
 							<div className='flex-grow'>
 								<h2 className='text-gray-900 text-lg title-font font-medium mb-3'>
-									The Catalyzer
+									Wallet
 								</h2>
 								<p className='leading-relaxed text-base'>
 									Blue bottle crucifix vinyl post-ironic four
@@ -78,7 +79,7 @@ function Features() {
 								</p>
 								<Link
 									to='/'
-									className='mt-3 text-indigo-500 inline-flex items-center'>
+									className='mt-3 text-blue-500 inline-flex items-center'>
 									Learn More
 									<svg
 										fill='none'
@@ -94,7 +95,7 @@ function Features() {
 							</div>
 						</div>
 						<div className='flex flex-col mb-10 lg:items-start items-center'>
-							<div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5'>
+							<div className='w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-blue-500 mb-5'>
 								<svg
 									fill='none'
 									stroke='currentColor'
@@ -109,7 +110,7 @@ function Features() {
 							</div>
 							<div className='flex-grow'>
 								<h2 className='text-gray-900 text-lg title-font font-medium mb-3'>
-									Neptune
+									Card
 								</h2>
 								<p className='leading-relaxed text-base'>
 									Blue bottle crucifix vinyl post-ironic four
@@ -118,7 +119,7 @@ function Features() {
 								</p>
 								<Link
 									to='/homepage'
-									className='mt-3 text-indigo-500 inline-flex items-center'>
+									className='mt-3 text-blue-500 inline-flex items-center'>
 									Learn More
 									<svg
 										fill='none'

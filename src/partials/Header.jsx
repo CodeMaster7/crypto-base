@@ -9,13 +9,12 @@ function Header() {
 						to='/'
 						className='flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0'>
 						<svg
-							xmlns='http://www.w3.org/2000/svg'
 							fill='none'
 							stroke='currentColor'
 							strokeLinecap='round'
 							strokeLinejoin='round'
 							strokeWidth='2'
-							className='w-10 h-10 text-white p-2 bg-indigo-500 rounded-full'
+							className='w-10 h-10 text-white p-2 bg-blue-500 rounded-full'
 							viewBox='0 0 24 24'>
 							<path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'></path>
 						</svg>
@@ -27,7 +26,7 @@ function Header() {
 						</Link>
 					</nav>
 					<Link to='/signup' className='mr-5 hover:text-gray-900'>
-						<button className='inline-flex items-center bg-indigo-500 text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0'>
+						<button className='inline-flex items-center bg-blue-500 text-white border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base mt-4 md:mt-0'>
 							Sign Up
 							<svg
 								fill='none'

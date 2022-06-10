@@ -6,18 +6,18 @@ function HeroBlocks() {
 			<section className='text-gray-700 body-font border-t border-gray-200'>
 				<div className='container px-5 py-24 mx-auto'>
 					<div className='flex flex-col text-center w-full mb-20'>
-						<h2 className='text-xs text-indigo-500 tracking-widest font-medium title-font mb-1'>
+						<h2 className='text-xs text-blue-500 tracking-widest font-medium title-font mb-1'>
 							ROOF PARTY POLAROID
 						</h2>
 						<h1 className='sm:text-3xl text-2xl font-medium title-font text-gray-900'>
-							Master Cleanse Reliac Heirloom
+							Today's Cryptocurrency Prices by Market Cap
 						</h1>
 					</div>
 					<div className='flex flex-wrap -m-4'>
 						<div className='p-4 md:w-1/3'>
 							<div className='flex rounded-lg h-full bg-gray-100 p-8 flex-col'>
 								<div className='flex items-center mb-3'>
-									<div className='w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0'>
+									<div className='w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0'>
 										<svg
 											fill='none'
 											stroke='currentColor'
@@ -30,7 +30,7 @@ function HeroBlocks() {
 										</svg>
 									</div>
 									<h2 className='text-gray-900 text-lg title-font font-medium'>
-										Shooting Stars
+										Trending
 									</h2>
 								</div>
 								<div className='flex-grow'>
@@ -41,7 +41,7 @@ function HeroBlocks() {
 									</p>
 									<Link
 										to='/'
-										className='mt-3 text-indigo-500 inline-flex items-center'>
+										className='mt-3 text-blue-500 inline-flex items-center'>
 										Learn More
 										<svg
 											fill='none'
@@ -60,7 +60,7 @@ function HeroBlocks() {
 						<div className='p-4 md:w-1/3'>
 							<div className='flex rounded-lg h-full bg-gray-100 p-8 flex-col'>
 								<div className='flex items-center mb-3'>
-									<div className='w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0'>
+									<div className='w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0'>
 										<svg
 											fill='none'
 											stroke='currentColor'
@@ -77,7 +77,7 @@ function HeroBlocks() {
 										</svg>
 									</div>
 									<h2 className='text-gray-900 text-lg title-font font-medium'>
-										The Catalyzer
+										Biggest Gainers
 									</h2>
 								</div>
 								<div className='flex-grow'>
@@ -88,7 +88,7 @@ function HeroBlocks() {
 									</p>
 									<Link
 										to='/'
-										className='mt-3 text-indigo-500 inline-flex items-center'>
+										className='mt-3 text-blue-500 inline-flex items-center'>
 										Learn More
 										<svg
 											fill='none'
@@ -107,7 +107,7 @@ function HeroBlocks() {
 						<div className='p-4 md:w-1/3'>
 							<div className='flex rounded-lg h-full bg-gray-100 p-8 flex-col'>
 								<div className='flex items-center mb-3'>
-									<div className='w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0'>
+									<div className='w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0'>
 										<svg
 											fill='none'
 											stroke='currentColor'
@@ -128,7 +128,7 @@ function HeroBlocks() {
 										</svg>
 									</div>
 									<h2 className='text-gray-900 text-lg title-font font-medium'>
-										Neptune
+										Recently Added
 									</h2>
 								</div>
 								<div className='flex-grow'>
@@ -139,7 +139,7 @@ function HeroBlocks() {
 									</p>
 									<Link
 										to='/'
-										className='mt-3 text-indigo-500 inline-flex items-center'>
+										className='mt-3 text-blue-500 inline-flex items-center'>
 										Learn More
 										<svg
 											fill='none'
